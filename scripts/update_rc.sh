@@ -3,7 +3,7 @@ set -euo pipefail
 
 # ---------- Config ----------
 RAW_BASE="https://raw.githubusercontent.com/korvin89/rc-sync/main"
-SNIPPET_URL="${RAW_BASE}/rc_snippet.sh"
+SNIPPET_URL="${RAW_BASE}/scripts/rc_snippet.sh"
 MARK_START="# >>> bashrc-sync start"
 MARK_END="# <<< bashrc-sync end"
 
