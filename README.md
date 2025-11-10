@@ -46,6 +46,16 @@ curl -fsSL https://raw.githubusercontent.com/korvin89/rc-sync/main/scripts/unins
 
 This will remove the snippet from your shell configuration file. Remember to reload your shell afterward.
 
+## Cleaning Up Backups
+
+The update and uninstall scripts create backups of your `.bashrc` or `.zshrc` file every time they are run. Over time, this can lead to many `.bak` files in your home directory.
+
+You can clean up old backups by running the `cleanup_backups.sh` script. This will remove all but the 5 most recent backups for each configuration file.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/korvin89/rc-sync/main/scripts/cleanup_backups.sh | bash
+```
+
 ## Manual Installation
 
 If you prefer not to execute scripts directly from the web, you can clone this repository and run the scripts manually.
